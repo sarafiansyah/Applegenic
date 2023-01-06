@@ -1,54 +1,20 @@
-/* Remove the navbar's default margin-bottom and rounded borders */
-.navbar {
-  margin-bottom: 0;
-  border-radius: 0;
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+:root {
+  --header-height: 3rem;
+  --nav-width: 68px;
+  --first-color: #4723d9;
+  --first-color-light: #afa5d9;
+  --white-color: #f7f6fb;
+  --body-font: "Nunito", sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
 }
-
-/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {
-  height: 450px;
-}
-
-/* Set gray background color and 100% height */
-.sidenav {
-  padding-top: 20px;
-  background-color: #f1f1f1;
-  height: 100%;
-}
-
-/* Set black background color, white text and some padding */
-footer {
-  background-color: #555;
-  color: white;
-  padding: 15px;
-}
-
-/* On small screens, set height to 'auto' for sidenav and grid */
-@media screen and (max-width: 767px) {
-  .sidenav {
-    height: auto;
-    padding: 15px;
-  }
-  .row.content {
-    height: auto;
-  }
-}
-.modal-header,
-h4,
-.close {
-  background-color: #3b5998;
-  color: white !important;
-  text-align: center;
-  font-size: 30px;
-}
-
-.sidebar-body,
+*,
 ::before,
 ::after {
   box-sizing: border-box;
 }
-
-.sidebar-body {
+body {
   position: relative;
   margin: var(--header-height) 0 0 0;
   padding: 0 1rem;
@@ -56,10 +22,10 @@ h4,
   font-size: var(--normal-font-size);
   transition: 0.5s;
 }
-.sidebar-body a {
+a {
   text-decoration: none;
 }
-.sidebar-body .header {
+.header {
   width: 100%;
   height: var(--header-height);
   position: fixed;
@@ -73,12 +39,12 @@ h4,
   z-index: var(--z-fixed);
   transition: 0.5s;
 }
-.sidebar-body .header_toggle {
+.header_toggle {
   color: var(--first-color);
   font-size: 1.5rem;
   cursor: pointer;
 }
-.sidebar-body .header_img {
+.header_img {
   width: 35px;
   height: 35px;
   display: flex;
@@ -86,10 +52,10 @@ h4,
   border-radius: 50%;
   overflow: hidden;
 }
-.sidebar-body .header_img img {
+.header_img img {
   width: 40px;
 }
-.sidebar-body .l-navbar {
+.l-navbar {
   position: fixed;
   top: 0;
   left: -30%;
@@ -100,54 +66,54 @@ h4,
   transition: 0.5s;
   z-index: var(--z-fixed);
 }
-.sidebar-body .nav {
+.nav {
   height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   overflow: hidden;
 }
-.sidebar-body .nav_logo,
-.sidebar-body .nav_link {
+.nav_logo,
+.nav_link {
   display: grid;
   grid-template-columns: max-content max-content;
   align-items: center;
   column-gap: 1rem;
   padding: 0.5rem 0 0.5rem 1.5rem;
 }
-.sidebar-body .nav_logo {
+.nav_logo {
   margin-bottom: 2rem;
 }
-.sidebar-body .nav_logo-icon {
+.nav_logo-icon {
   font-size: 1.25rem;
   color: var(--white-color);
 }
-.sidebar-body .nav_logo-name {
+.nav_logo-name {
   color: var(--white-color);
   font-weight: 700;
 }
-.sidebar-body .nav_link {
+.nav_link {
   position: relative;
   color: var(--first-color-light);
   margin-bottom: 1.5rem;
   transition: 0.3s;
 }
-.sidebar-body .nav_link:hover {
+.nav_link:hover {
   color: var(--white-color);
 }
-.sidebar-body .nav_icon {
+.nav_icon {
   font-size: 1.25rem;
 }
-.sidebar-body .show {
+.show {
   left: 0;
 }
-.sidebar-body .body-pd {
+.body-pd {
   padding-left: calc(var(--nav-width) + 1rem);
 }
-.sidebar-body .active {
+.active {
   color: var(--white-color);
 }
-.sidebar-body .active::before {
+.active::before {
   content: "";
   position: absolute;
   left: 0;
@@ -155,23 +121,23 @@ h4,
   height: 32px;
   background-color: var(--white-color);
 }
-.sidebar-body .height-100 {
+.height-100 {
   height: 100vh;
 }
 @media screen and (min-width: 768px) {
-  .sidebar-body {
+  body {
     margin: calc(var(--header-height) + 1rem) 0 0 0;
     padding-left: calc(var(--nav-width) + 2rem);
   }
-  .sidebar-body.header {
+  .header {
     height: calc(var(--header-height) + 1rem);
     padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
   }
-  .sidebar-body .header_img {
+  .header_img {
     width: 40px;
     height: 40px;
   }
-  .sidebar-body .header_img img {
+  .header_img img {
     width: 45px;
   }
   .l-navbar {
