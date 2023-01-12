@@ -1,3 +1,11 @@
+<?php
+include('koneksi.php');
+
+if (isset($_SESSION['login_user'])) {
+    header("location: about.php");
+}
+?>
+
 <!doctype html>
 <html>
 
@@ -8,6 +16,7 @@
     <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css' rel='stylesheet'>
     <link href='https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css' rel='stylesheet'>
     <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/styles.css">
     </link>
 </head>
@@ -60,7 +69,139 @@
     </div>
     <!--Container Main start-->
     <div id="p1_dash" class=" bg-light p-5">
-        <h2>Diagnose
+        <div class="">
+            <div class="">
+
+                <div class=" ">
+
+                    <h2>DIAGNOSA PENYAKIT</h2>
+
+                    <form id="form1" name="form1" method="post" action="p2_diagnose.php">
+                        <label for="sel1">Jenis Tanaman</label>
+                        <select class="form-control" name="tanaman" onChange='this.form.submit();'>
+                            <option>Tanaman</option>
+                            <option>Bawang</option>
+                            <option>Apel</option>
+                        </select>
+                    </form>
+                    <br>
+                    <div class="" style="font-size:18px; font-weight:normal;">
+                        <form id="form2" name="form2" method="post" action="p2_diagnose.php">
+                            <?php
+                            if (isset($_POST['tanaman']))
+                                if ($_POST['tanaman'] != "jenistanaman") {
+                                    echo  "<br><label style='font-weight: bold;'>AKAR</label><br>";
+                                    $tampil = "select * from gejala where daerah='akar' and jenistanaman= \"" . $_POST['tanaman'] . "\"";
+                                    $query = mysqli_query($konek_db, $tampil);
+                                    while ($hasil = mysqli_fetch_array($query)) {
+                                        echo "<input class='form-check-input' type='checkbox' value='" . $hasil['gejala'] . "' name='gejala[]' /> " . $hasil['gejala'] . "<br>";
+                                    }
+                                }
+                            ?>
+                            <?php
+                            if (isset($_POST['tanaman']))
+                                if ($_POST['tanaman'] != "jenistanaman") {
+                                    echo  "<br><label style='font-weight: bold;'>BATANG</label><br>";
+                                    $tampil = "select * from gejala where daerah='batang' and jenistanaman= \"" . $_POST['tanaman'] . "\"";
+                                    $query = mysqli_query($konek_db, $tampil);
+                                    while ($hasil = mysqli_fetch_array($query)) {
+                                        echo "<input class='form-check-input' type='checkbox' value='" . $hasil['gejala'] . "' name='gejala[]' /> " . $hasil['gejala'] . "<br>";
+                                    }
+                                }
+                            ?>
+
+                            <?php
+                            if (isset($_POST['tanaman']))
+                                if ($_POST['tanaman'] != "jenistanaman") {
+                                    echo  "<br><label style='font-weight: bold;'>DAUN</label><br>";
+                                    $tampil = "select * from gejala where daerah='daun' and jenistanaman= \"" . $_POST['tanaman'] . "\"";
+                                    $query = mysqli_query($konek_db, $tampil);
+                                    while ($hasil = mysqli_fetch_array($query)) {
+                                        echo "<input class='form-check-input' type='checkbox' value='" . $hasil['gejala'] . "' name='gejala[]' /> " . $hasil['gejala'] . "<br>";
+                                    }
+                                }
+                            ?>
+                            <?php
+                            if (isset($_POST['tanaman']))
+                                if ($_POST['tanaman'] != "jenistanaman") {
+                                    echo  "<br><label style='font-weight: bold;'>BUAH/UMBI</label><br>";
+                                    $tampil = "select * from gejala where daerah='Buah/Umbi' and jenistanaman= \"" . $_POST['tanaman'] . "\"";
+                                    $query = mysqli_query($konek_db, $tampil);
+                                    while ($hasil = mysqli_fetch_array($query)) {
+                                        echo "<input class='form-check-input' type='checkbox' value='" . $hasil['gejala'] . "' name='gejala[]' /> " . $hasil['gejala'] . "<br>";
+                                    }
+                                }
+                            ?>
+                            <?php
+                            if (isset($_POST['tanaman']))
+                                if ($_POST['tanaman'] != "jenistanaman") {
+                                    echo  "<br><label style='font-weight: bold;'>BUNGA</label><br>";
+                                    $tampil = "select * from gejala where daerah='bunga' and jenistanaman= \"" . $_POST['tanaman'] . "\"";
+                                    $query = mysqli_query($konek_db, $tampil);
+                                    while ($hasil = mysqli_fetch_array($query)) {
+                                        echo "<input class='form-check-input' type='checkbox' value='" . $hasil['gejala'] . "' name='gejala[]' /> " . $hasil['gejala'] . "<br>";
+                                    }
+                                }
+                            ?>
+                            <?php
+                            if (isset($_POST['tanaman']))
+                                if ($_POST['tanaman'] != "jenistanaman") {
+                                    echo  "<br><label style='font-weight: bold;'>BIJI</label><br>";
+                                    $tampil = "select * from gejala where daerah='biji' and jenistanaman= \"" . $_POST['tanaman'] . "\"";
+                                    $query = mysqli_query($konek_db, $tampil);
+                                    while ($hasil = mysqli_fetch_array($query)) {
+                                        echo "<input class='form-check-input' type='checkbox' value='" . $hasil['gejala'] . "' name='gejala[]' /> " . $hasil['gejala'] . "<br>";
+                                    }
+                                }
+                            ?>
+
+                            <br>
+                            <button type="submit" name="submit" onclick="return checkDiagnosa()" class="btn btn-primary">CEK PENYAKIT</button><br><br>
+                            <div class="panel panel-info">
+                                <div class="panel-heading">HASIL DIAGNOSA</div>
+                                <div class="panel-body">
+                                    <div class="box-body table-responsive">
+                                        <table id="example1" class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>NO</th>
+                                                    <th>ID PENYAKIT</th>
+                                                    <th>Nama Penyakit</th>
+                                                    <th>Jenis Tanaman</th>
+                                                    <th>Detail</th>
+                                                </tr>
+                                            </thead>
+                                            <?php
+                                            if (isset($_POST['submit'])) {
+                                                $gejala = $_POST['gejala'];
+                                                $jumlah_dipilih = count($gejala);
+                                                for ($x = 0; $x < $jumlah_dipilih; $x++) {
+                                                    $tampil = "select DISTINCT p.idpenyakit, p.namapenyakit, p.jenistanaman from basispengetahuan b, penyakit p where b.gejala='$gejala[$x]' and p.namapenyakit=b.namapenyakit group by namapenyakit";
+                                                    $result = mysqli_query($konek_db, $tampil);
+                                                    $hasil  = mysqli_fetch_array($result);
+                                                }
+                                                echo "
+                           <tr>  
+        			             <td>" . $x . "</td>
+                                 <td>" . $hasil['idpenyakit'] . "</td>
+					             <td>" . $hasil['namapenyakit'] . "</td>  
+                                 <td>" . $hasil['jenistanaman'] . "</td> 
+                                 <td><a href=\"hasildiagnosa.php?id=" . $hasil['idpenyakit'] . "\"><i class='fa-solid fa-magnifying-glass'></i></a></td>
+        		          </tr>   
+                               
+                               ";
+                                            }
+
+                                            ?>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
     <!--Container Main end-->

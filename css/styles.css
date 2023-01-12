@@ -18,6 +18,7 @@
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
 :root {
   --header-height: 3rem;
@@ -25,7 +26,7 @@
   --first-color: #4723d9;
   --first-color-light: #afa5d9;
   --white-color: #f7f6fb;
-  --body-font: "Nunito", sans-serif;
+  --body-font: "Poppins", sans-serif;
   --normal-font-size: 1rem;
   --z-fixed: 100;
 }

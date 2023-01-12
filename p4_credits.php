@@ -60,7 +60,7 @@
     </div>
     <!--Container Main start-->
     <div id="p1_dash" class=" bg-light p-5">
-        <h2>Diagnose
+        <h2>Credits
     </div>
 
     <!--Container Main end-->
