@@ -80,7 +80,7 @@ if (isset($_SESSION['login_user'])) {
                         <label for="sel1">Jenis Tanaman</label>
                         <select class="form-control" name="tanaman" onChange='this.form.submit();'>
                             <option>Tanaman</option>
-                            <option>Bawang</option>
+
                             <option>Apel</option>
                         </select>
                     </form>
@@ -186,7 +186,7 @@ if (isset($_SESSION['login_user'])) {
                                  <td>" . $hasil['idpenyakit'] . "</td>
 					             <td>" . $hasil['namapenyakit'] . "</td>  
                                  <td>" . $hasil['jenistanaman'] . "</td> 
-                                 <td><a href=\"hasildiagnosa.php?id=" . $hasil['idpenyakit'] . "\"><i class='fa-solid fa-magnifying-glass'></i></a></td>
+                                 <td><a href=\"p2_diagnose_result.php?id=" . $hasil['idpenyakit'] . "\"><i class='fa-solid fa-magnifying-glass'></i></a></td>
         		          </tr>   
                                
                                ";
