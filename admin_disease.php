@@ -1,5 +1,9 @@
 <?php
-include "session.php";
+include('koneksi.php');
+
+if (isset($_SESSION['login_user'])) {
+    header("location: about.php");
+}
 ?>
 
 <!doctype html>
@@ -39,11 +43,11 @@ include "session.php";
                     <a href="admin_disease.php" class="nav_link">
                         <i class="bx bx-user nav_icon"></i> <span class="nav_name">Manage Diseases</span>
                     </a>
-                    <a href="admin_symptoms.php" class="nav_link">
+                    <a href="gejala.php" class="nav_link">
                         <i class="bx bx-message-square-detail nav_icon"></i>
                         <span class="nav_name">Manage Symptoms</span>
                     </a>
-                    <a href="admin_knowledge.php" class="nav_link">
+                    <a href="basispengetahuan.php" class="nav_link">
                         <i class="bx bx-bookmark nav_icon"></i>
                         <span class="nav_name">Knowledge Base</span>
                     </a>
@@ -65,8 +69,55 @@ include "session.php";
     </div>
     <!--Container Main start-->
     <div id="p1_dash" class=" bg-light p-5">
-        <h2>Admin Home
-        </h2>
+        <div class="">
+            <h2 class="text-center">DAFTAR HAMA DAN PENYAKIT</h2>
+            <form id="form1" name="form1" method="post" action="admin_disease.php">
+                <label for="sel1">Jenis Tanaman</label>
+                <select class="form-control" name="tanaman" onChange='this.form.submit();'>
+                    <option>Tanaman</option>
+                    <option>Bawang</option>
+                    <option>Apel</option>
+                </select>
+            </form>
+            <br>
+            <a href="ainputpenyakit.php"><button type="button" class="btn btn-default">
+                    <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                </button></a>
+            <br><br>
+            <div class="box-body table-responsive">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>NO</th>
+                            <th>ID Penyakit</th>
+                            <th>Nama Penyakit</th>
+                            <th>Jenis Penyakit</th>
+                            <th>Detail</th>
+                        </tr>
+                    </thead>
+                    <?php
+                    if (isset($_POST['tanaman']))
+                        if ($_POST['tanaman'] != "jenistanaman") {
+                            $queri = "Select * From penyakit where jenistanaman = \"" . $_POST['tanaman'] . "\"";
+                            $hasil = mysqli_query($konek_db, $queri);
+                            $id = 0;
+                            while ($data = mysqli_fetch_array($hasil)) {
+                                $id++;
+                                echo "      
+        			<tr>  
+        			<td>" . $id . "</td>
+					<td>" . $data[0] . "</td>  
+        			<td>" . $data[1] . "</td>  
+        			<td>" . $data[2] . "</td>  
+                    <td><a href=\"adetailpenyakit.php?id=" . $data[0] . "\"><i class='glyphicon glyphicon-search'></i></a>" . " || <a href=\"aeditpenyakit.php?id=" . $data[0] . "\"><i class='glyphicon glyphicon-pencil'></i></a>" . " || <a href=\"adeletepenyakit.php?id=" . $data[0] . "\" onclick='return checkDelete()'><i class='glyphicon glyphicon-trash'></i></a>" . "</td>
+        		</tr>   
+        	";
+                            }
+                        }
+                    ?>
+                </table><br><br><br><br><br>
+            </div>
+        </div>
     </div>
 
     <!--Container Main end-->
