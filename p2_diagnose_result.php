@@ -47,7 +47,7 @@ if (isset($_SESSION['login_user'])) {
                         <i class="bx bx-message-square-detail nav_icon"></i>
                         <span class="nav_name">Diseases</span>
                     </a>
-                    <a href="p4_credits" class="nav_link">
+                    <a href="p4_credits.php" class="nav_link">
                         <i class="bx bx-bookmark nav_icon"></i>
                         <span class="nav_name">Credits</span>
                     </a>

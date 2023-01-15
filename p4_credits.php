@@ -38,7 +38,7 @@
                         <i class="bx bx-message-square-detail nav_icon"></i>
                         <span class="nav_name">Diseases</span>
                     </a>
-                    <a href="p4_credits" class="nav_link active">
+                    <a href="p4_credits.php" class="nav_link active">
                         <i class="bx bx-bookmark nav_icon"></i>
                         <span class="nav_name">Credits</span>
                     </a>
