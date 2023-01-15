@@ -31,9 +31,9 @@ if (isset($_SESSION['login_user'])) {
     <div class="l-navbar" id="nav-bar">
         <nav class="nav">
             <div>
-                <a href="page1.php" class="nav_logo">
+                <a href="index3.php" class="nav_logo">
                     <i class="bx bx-layer nav_logo-icon"></i>
-                    <span class="nav_logo-name">BBBootstrap</span>
+                    <span class="nav_logo-name">Applegenic</span>
                 </a>
                 <div class="nav_list">
                     <a href="index3.php" class="nav_link ">
@@ -47,7 +47,7 @@ if (isset($_SESSION['login_user'])) {
                         <i class="bx bx-message-square-detail nav_icon"></i>
                         <span class="nav_name">Diseases</span>
                     </a>
-                    <a href="p4_credits" class="nav_link">
+                    <a href="p4_credits.php" class="nav_link">
                         <i class="bx bx-bookmark nav_icon"></i>
                         <span class="nav_name">Credits</span>
                     </a>
@@ -174,7 +174,9 @@ if (isset($_SESSION['login_user'])) {
             </div>
         </div>
     </div>
-
+<!-- Footer -->
+<?php  include("_fw/footer-main.php") ?>
+  <!-- Footer -->
     <!--Container Main end-->
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
     <script type='text/javascript'>
