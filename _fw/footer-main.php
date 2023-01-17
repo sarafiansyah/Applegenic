@@ -40,11 +40,7 @@
         <!-- Grid column -->
         <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4" style="text-align: left;">
           <!-- Content -->
-<<<<<<< HEAD
-          <h6 class=" fw-bold">Medslarm</h6>
-=======
           <h6 class=" fw-bold">Applegenic</h6>
->>>>>>> 02b71d9437c38639f646c185d607613edb44ddf6
           <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
           <p>
             Here you can use rows and columns to organize your footer
@@ -57,11 +53,7 @@
         <!-- Grid column -->
         <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4" style="text-align: left;">
           <!-- Links -->
-<<<<<<< HEAD
-          <h6 class="text-uppercase fw-bold">MAYN Corp.</h6>
-=======
           <h6 class="text-uppercase fw-bold">APPLEGENIC Corp.</h6>
->>>>>>> 02b71d9437c38639f646c185d607613edb44ddf6
           <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
           <p>
             <a href="index.php" class="text-dark">Home</a>
@@ -104,11 +96,7 @@
           <h6 class="text-uppercase fw-bold">Contact</h6>
           <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
           <p><i class="fas fa-home mr-3"></i> Bekasi, ID 10230, Indonesia</p>
-<<<<<<< HEAD
-          <p><i class="fas fa-envelope mr-3"></i> medslarm@gmail.com</p>
-=======
           <p><i class="fas fa-envelope mr-3"></i> applegenic@gmail.com</p>
->>>>>>> 02b71d9437c38639f646c185d607613edb44ddf6
           <p><i class="fas fa-phone mr-3"></i> + 62 811 8800 200</p>
           <p><i class="fas fa-print mr-3"></i> + 62 811 8800 200</p>
         </div>
@@ -121,11 +109,7 @@
 
   <!-- Copyright -->
   <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-<<<<<<< HEAD
-    <a class="text-dark" href="#">© 2022 MAYN Coorporation.</a>
-=======
     <a class="text-dark" href="#">© 2023 APPLEGENIC Coorporation.</a>
->>>>>>> 02b71d9437c38639f646c185d607613edb44ddf6
   </div>
   <!-- Copyright -->
 </footer>
