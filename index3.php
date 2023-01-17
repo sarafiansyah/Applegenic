@@ -24,7 +24,7 @@
     <nav class="nav">
       <div>
         <a href="index3.php" class="nav_logo">
-          <i class="fa-solid fa-apple-whole" style="color: white;"></i></i>
+          <img src="images/logo_applegenic2.png" width=25 style="margin-top: -10px;" alt="">
           <span class="nav_logo-name">Applegenic</span>
         </a>
         <div class="nav_list">
