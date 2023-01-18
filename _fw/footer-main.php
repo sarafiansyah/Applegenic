@@ -9,25 +9,28 @@
 
     <!-- Right -->
     <div>
-      <a href="https://www.facebook.com/mahesa.rafiansyah" class="text-white me-4">
+      <a href="https://www.facebook.com/nathan.septian.5" class="text-white me-4">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="#" class="text-white me-4">
+      <a href="https://twitter.com/Nathanseptian1" class="text-white me-4">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="" class="text-white me-4">
+      <a href="mailto:nathanseptiantimotius123@gmail.com" class="text-white me-4">
         <i class="fab fa-google"></i>
       </a>
-      <a href="https://www.instagram.com/sa_rafiansyah/" class="text-white me-4">
+      <a href="https://www.instagram.com/nathansept/" class="text-white me-4">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.linkedin.com/in/mahesa-rafian-syah-08531b186/" class="text-white me-4">
+      <a href="https://www.linkedin.com/in/nathan-septian-7276b2201/" class="text-white me-4">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/sarafiansyah" class="text-white me-4">
+      <a href="https://github.com/Nathansept" class="text-white me-4">
         <i class="fab fa-github"></i>
       </a>
-    </div>
+      <a class="text-white me-4" href="https://www.youtube.com/channel/UCkbG6wejVicv_ZgkK2eermw"
+        ><i class="fab fa-youtube"></i>
+      </a>
+</div>
     <!-- Right -->
   </section>
   <!-- Section: Social media -->
@@ -56,16 +59,16 @@
           <h6 class="text-uppercase fw-bold">APPLEGENIC Corp.</h6>
           <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
           <p>
-            <a href="index.php" class="text-dark">Home</a>
+            <a href="index3.php" class="text-dark">Home</a>
           </p>
           <p>
-            <a href="pricing.php" class="text-dark">Membership</a>
+            <a href="p2_diagnose.php" class="text-dark">Diagnose</a>
           </p>
           <p>
           <p>
-            <a href="public-signIn.php" class="text-dark">Sign In</a>
+            <a href="p3_disease.php" class="text-dark">Diseases</a>
           </p>
-          <a href="public-signUp.php" class="text-dark">Sign Up</a>
+          <a href="p4_credits.php" class="text-dark">Credits</a>
           </p>
         </div>
         <!-- Grid column -->
@@ -76,7 +79,7 @@
           <h6 class="text-uppercase fw-bold">Useful links</h6>
           <hr class="mb-4 mt-0 d-inline-block mx-auto" style="width: 60px; background-color: #7c4dff; height: 2px" />
           <p>
-            <a href="userMain.php" class="text-dark">Your Account</a>
+            <a href="#!" class="text-dark">Your Account</a>
           </p>
           <p>
             <a href="#!" class="text-dark">Become an Affiliate</a>

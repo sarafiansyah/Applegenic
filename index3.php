@@ -23,7 +23,7 @@
   <div class="l-navbar" id="nav-bar">
     <nav class="nav">
       <div>
-        <a href="index3.php" class="nav_logo">
+        <a href="#" class="nav_logo">
           <img src="images/logo_applegenic2.png" width=25 style="margin-top: -10px;" alt="">
           <span class="nav_logo-name">Applegenic</span>
         </a>

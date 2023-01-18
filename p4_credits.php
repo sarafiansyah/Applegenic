@@ -24,8 +24,8 @@
   <div class="l-navbar" id="nav-bar">
     <nav class="nav">
       <div>
-        <a href="index3.php" class="nav_logo">
-          <i class="bx bx-layer nav_logo-icon"></i>
+      <a href="#" class="nav_logo">
+          <img src="images/logo_applegenic2.png" width=25 style="margin-top: -10px;" alt="">
           <span class="nav_logo-name">Applegenic</span>
         </a>
         <div class="nav_list">
@@ -77,26 +77,26 @@
               <img src="images/dp_nathan.jpeg" class="thumbnail">
 
               <h3 class="name">Nathan Septian</h3>
-              <p class="title">Javascript Developer</p>
+              <p class="title">Full Stack Developer</p>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p>
-              <button type="button" class="btn">Hire Me</button>
+              <a href="https://linktr.ee/nathansept"><button type="button" class="btn">Hire Me</button></a>
             </div>
 
             <div class="social-icons">
               <div class="icon">
-                <a href="/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/nathansept/"><i class="fab fa-instagram"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
 
               <div class="icon">
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/Nathansept"><i class="fab fa-github"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
 
               <div class="icon">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=62083878973311"><i class="fab fa-whatsapp"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
@@ -113,7 +113,7 @@
               <i class="far fa-heart"></i>
             </div>
 
-            <div class="profile">
+            <!-- <div class="profile">
               <img src="images/dp_yohanes.jpeg" class="thumbnail">
 
               <h3 class="name">Yohanes Stefanus</h3>
@@ -124,7 +124,7 @@
 
             <div class="social-icons">
               <div class="icon">
-                <a href="/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/yohanes_.1304/"><i class="fab fa-instagram"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
@@ -136,7 +136,7 @@
               </div>
 
               <div class="icon">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=6281292637847"><i class="fab fa-whatsapp"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
@@ -151,7 +151,7 @@
               <i class="fas fa-long-arrow-alt-left"></i>
               <i class="fas fa-ellipsis-v"></i>
               <i class="far fa-heart"></i>
-            </div>
+            </div> -->
 
             <div class="profile">
               <img src="images/dp_mahesa.png" class="thumbnail">
@@ -164,19 +164,19 @@
 
             <div class="social-icons">
               <div class="icon">
-                <a href="/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/sa_rafiansyah/"><i class="fab fa-instagram"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
 
               <div class="icon">
-                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="https://github.com/sarafiansyah"><i class="fab fa-github"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
 
               <div class="icon">
-                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=628118833680"><i class="fab fa-whatsapp"></i></a>
                 <h4>12.8k</h4>
                 <p>Followers</p>
               </div>
