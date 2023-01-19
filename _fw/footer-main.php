@@ -1,6 +1,6 @@
-<footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">
+<footer class="text-center text-lg-start text-dark" style="background-color: #FFFFFF">
   <!-- Section: Social media -->
-  <section class="d-flex justify-content-between p-4 text-white" style="background-color: #0099ff">
+  <section class="d-flex justify-content-between p-4 text-dark" style="background-color: #FFFFFF">
     <!-- Left -->
     <div class="me-5">
       <span>Get connected with us on social networks:</span>
@@ -8,29 +8,28 @@
     <!-- Left -->
 
     <!-- Right -->
-    <div>
-      <a href="https://www.facebook.com/nathan.septian.5" class="text-white me-4">
+    <div class="text-dark">
+      <a href="https://www.facebook.com/nathan.septian.5" class=" me-4">
         <i class="fab fa-facebook-f"></i>
       </a>
-      <a href="https://twitter.com/Nathanseptian1" class="text-white me-4">
+      <a href="https://twitter.com/Nathanseptian1" class=" me-4">
         <i class="fab fa-twitter"></i>
       </a>
-      <a href="mailto:nathanseptiantimotius123@gmail.com" class="text-white me-4">
+      <a href="mailto:nathanseptiantimotius123@gmail.com" class=" me-4">
         <i class="fab fa-google"></i>
       </a>
-      <a href="https://www.instagram.com/nathansept/" class="text-white me-4">
+      <a href="https://www.instagram.com/nathansept/" class=" me-4">
         <i class="fab fa-instagram"></i>
       </a>
-      <a href="https://www.linkedin.com/in/nathan-septian-7276b2201/" class="text-white me-4">
+      <a href="https://www.linkedin.com/in/nathan-septian-7276b2201/" class=" me-4">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="https://github.com/Nathansept" class="text-white me-4">
+      <a href="https://github.com/Nathansept" class=" me-4">
         <i class="fab fa-github"></i>
       </a>
-      <a class="text-white me-4" href="https://www.youtube.com/channel/UCkbG6wejVicv_ZgkK2eermw"
-        ><i class="fab fa-youtube"></i>
+      <a class=" me-4" href="https://www.youtube.com/channel/UCkbG6wejVicv_ZgkK2eermw"><i class="fab fa-youtube"></i>
       </a>
-</div>
+    </div>
     <!-- Right -->
   </section>
   <!-- Section: Social media -->
@@ -111,7 +110,7 @@
   <!-- Section: Links  -->
 
   <!-- Copyright -->
-  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+  <div class="text-center p-3" style="background-color:#FFFFFF">
     <a class="text-dark" href="#">© 2023 APPLEGENIC Coorporation.</a>
   </div>
   <!-- Copyright -->

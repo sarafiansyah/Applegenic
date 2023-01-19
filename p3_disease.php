@@ -28,80 +28,43 @@ if (isset($_SESSION['login_user'])) {
         <div class="header_toggle"> <i class='bx bx-menu' id="header-toggle"></i> </div>
         <div class="header_img"> <img src="https://i.imgur.com/hczKIze.jpg" alt=""> </div>
     </header>
-    <div class="l-navbar" id="nav-bar">
-        <nav class="nav">
-            <div>
-            <a href="#" class="nav_logo">
-          <img src="images/logo_applegenic2.png" width=25 style="margin-top: -10px;" alt="">
-          <span class="nav_logo-name">Applegenic</span>
-        </a>
-                <div class="nav_list">
-                    <a href="index3.php" class="nav_link ">
-                        <i class="bx bx-grid-alt nav_icon"></i>
-                        <span class="nav_name">Dashboard</span>
-                    </a>
-                    <a href="p2_diagnose.php" class="nav_link ">
-                        <i class="bx bx-user nav_icon"></i> <span class="nav_name">Diagnose</span>
-                    </a>
-                    <a href="p3_disease.php" class="nav_link active">
-                        <i class="bx bx-message-square-detail nav_icon"></i>
-                        <span class="nav_name">Diseases</span>
-                    </a>
-                    <a href="p4_credits.php" class="nav_link">
-                        <i class="bx bx-bookmark nav_icon"></i>
-                        <span class="nav_name">Credits</span>
-                    </a>
-                    <!-- <a href="#" class="nav_link">
-            <i class="bx bx-folder nav_icon"></i>
-            <span class="nav_name">Files</span>
-        </a>
-        <a href="#" class="nav_link">
-            <i class="bx bx-bar-chart-alt-2 nav_icon"></i>
-            <span class="nav_name">Stats</span>
-        </a> -->
-                </div>
-            </div>
-            <a href="#" class="nav_link">
-                <i class="bx bx-log-out nav_icon"></i> <span class="nav_name">SignOut</span>
-            </a>
-        </nav>
 
-    </div>
+    <?php include("_fw/nav_3.php") ?>
+
     <!--Container Main start-->
-    <div id="p1_dash" class=" bg-light p-5">
-        <h2>Disease
-            <div class="">
-                <h2 class="text-center">DAFTAR PENYAKIT</h2>
-                <form id="form1" name="form1" method="post" action="p3_disease.php">
-                    <label for="sel1">Jenis Tanaman</label>
-                    <select class="form-control" name="tanaman" onChange='this.form.submit();'>
-                        <option>Tanaman</option>
-                        <option>Bawang</option>
-                        <option>Apel</option>
-                    </select>
-                </form>
+    <div id="p1_dash" class=" p-5">
+        <div class="">
+            <h2 class="">DAFTAR PENYAKIT</h2>
+            <form id="form1" name="form1" method="post" action="p3_disease.php">
+                <label for="sel1">Jenis Tanaman</label>
+                <select class="form-control" name="tanaman" onChange='this.form.submit();'>
+                    <option>Tanaman</option>
+                    <option>Bawang</option>
+                    <option>Apel</option>
+                </select>
+            </form>
 
-                <br>
-                <div class="box-body table-responsive">
-                    <table id="example1" class="table table-bordered table-striped">
-                        <thead>
-                            <tr style="font-size: 18px;">
-                                <th>NO</th>
-                                <th>ID Penyakit</th>
-                                <th>Nama Penyakit</th>
-                                <th>Jenis Tanaman</th>
-                                <th>Detail</th>
-                            </tr>
-                        </thead>
-                        <?php
-                        if (isset($_POST['tanaman']))
-                            if ($_POST['tanaman'] != "jenistanaman") {
-                                $queri = "Select * From penyakit where jenistanaman = \"" . $_POST['tanaman'] . "\"";
-                                $hasil = mysqli_query($konek_db, $queri);
-                                $id = 0;
-                                while ($data = mysqli_fetch_array($hasil)) {
-                                    $id++;
-                                    echo "      
+            <br>
+            <div class="box-body table-responsive">
+                <table id="example1" class="table table-bordered table-striped">
+                    <thead>
+                        <tr style="font-size: 18px;">
+                            <th>NO</th>
+                            <th>ID Penyakit</th>
+                            <th>Nama Penyakit</th>
+                            <th>Jenis Tanaman</th>
+                            <th>Detail</th>
+                        </tr>
+                    </thead>
+                    <?php
+                    if (isset($_POST['tanaman']))
+                        if ($_POST['tanaman'] != "jenistanaman") {
+                            $queri = "Select * From penyakit where jenistanaman = \"" . $_POST['tanaman'] . "\"";
+                            $hasil = mysqli_query($konek_db, $queri);
+                            $id = 0;
+                            while ($data = mysqli_fetch_array($hasil)) {
+                                $id++;
+                                echo "      
         			<tr style='font-weight:normal; font-size: 18px;'>  
         			<td>" . $id . "</td>
 					<td>" . $data[0] . "</td>  
@@ -110,18 +73,18 @@ if (isset($_SESSION['login_user'])) {
                     <td><a href=\"detailpenyakit.php?id=" . $data[0] . "\"><i class='fa-solid fa-magnifying-glass'></i></a></td>
         		</tr>   
         	";
-                                }
                             }
-                        ?>
-                    </table><br><br><br><br><br>
-                </div>
+                        }
+                    ?>
+                </table><br><br><br><br><br>
             </div>
+        </div>
     </div>
     </div>
     </div>
-<!-- Footer -->
-<?php  include("_fw/footer-main.php") ?>
-  <!-- Footer -->
+    <!-- Footer -->
+    <?php include("_fw/footer-main.php") ?>
+    <!-- Footer -->
     <!--Container Main end-->
     <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
     <script type='text/javascript'>
