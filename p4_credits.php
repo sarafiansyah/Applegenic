@@ -123,9 +123,9 @@
               <img src="images/dp_mahesa.png" class="thumbnail">
 
               <h3 class="name">Mahesa Rafian Syah</h3>
-              <p class="title">Javascript Developer</p>
+              <p class="title">Graphic Designer</p>
               <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque aliquam aliquid porro!</p>
-              <button type="button" class="btn">Hire Me</button>
+              <a href="https://rafiansyahdesign.wordpress.com"><button type="button" class="btn">Hire Me</button></a>
             </div>
 
             <div class="social-icons">
